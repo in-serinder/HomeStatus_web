@@ -1,0 +1,152 @@
+.show{
+    border: 2px solid green;
+}
+
+
+.could_pane{
+    width: 350px;
+    height: 650px;
+    position: absolute;
+    margin-top: 10px;
+    right: 20px;
+    box-sizing: border-box;
+    background-color: #d7e2e6;
+    border-bottom: 3px solid #15bff7;
+    border-width: 2px;
+    
+}
+
+
+.body_pane{
+    width: 100%;
+}
+
+.center_text_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ostx_text{
+    display: flex;
+    justify-content: flex-start;
+   position: relative;
+    padding: 0px;
+    margin-left: 20px;
+    right: 0px;
+    font-size: 0.625em;
+}
+
+.title_text_could{
+    margin-right: 190px;
+
+    color: rgb(37, 37, 37);
+    
+}
+
+
+.common_text{
+    font-size: 0.625em;
+    left: 20px;
+}
+
+.text_area_input{
+    resize: none;
+    margin-left: 40px;
+    background-color:#d7e2e6 ;
+    border: 1px solid gray;
+    width: 100px;
+    height: 15px;
+}
+
+.could_table{
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-left: 15px;
+    align-items: center;
+    width: 90%;
+}
+
+.table_td_th{
+    font-size: 0.725em;
+    border: 2px solid gray;
+}
+
+.table_th{
+    font-size: 0.625em;
+    background-color: #d7e2e6;
+}
+
+.table_td{
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+}
+
+.today_show_text{
+    
+    left: 0px;
+    border: 2px solid black;
+    
+}
+
+
+
+
+
+
+
+.li_item{
+    padding: 0;
+         /* padding-right:20%;  */
+         padding-left: 5px;
+         text-align: left;  /*内文本对齐方式*/
+        position: relative;
+        font-size: 0.725em;
+        top: 0px;
+        left: 0px;
+        list-style: none;
+        line-height: 1.5; /* 调整行高，使标点与文本垂直居中 */
+        word-break: break-all;
+        /* border: 2px solid black;  */
+    
+}
+
+
+/* img */
+
+
+.could_status_img_pane{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 5px; */
+    /* border:2px purple solid; */
+    height: 200px;
+}
+
+.could_img{
+    z-index: 240;
+   position: absolute;
+   height: 120px;
+   width: 120px;
+ /* 样式设置初始为隐藏，再次显示需要js更改属性 */
+    opacity: 0;
+    transition: opacity 4s;
+
+    /* border: 2px solid black; */
+}
+
+/* 伪元素 */
+
+.li_item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 12px;
+    background-color:#0088cc;
+  }
+
+

@@ -1,0 +1,66 @@
+.remote_body{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    /* background-color: #333333; */
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    border: 2px solid black;
+}
+
+.remote_login{
+    z-index: 999;
+}
+
+.remote_console_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+}
+
+.remote_console_body_title{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 35px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.remote_console_body_title_img{
+    top: 3px;
+    width: 30px;
+    position: absolute;
+    left: 10px;
+}
+
+.remote_console_body_title_status_text{
+    margin-left: 55px;
+    margin-top: 7px;
+    font-weight: bold;
+    font-size: 0.952em;
+}
+
+
+.output_console_body{
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    border: red solid 2px;
+}
+
+.output_console_text{
+    font-size: 0.825em;
+}
+
+.input_console_text{
+    background-color: transparent;
+    border: transparent;
+    color: #ffffff;
+}

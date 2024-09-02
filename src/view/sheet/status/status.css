@@ -1,0 +1,189 @@
+.status_classic{
+    display: none;
+    
+}
+
+.status_def_hardware{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 100%;
+
+}
+
+.cpu_pane_body{
+    height: 200px;
+    border-bottom: 2px solid black;
+}
+
+.cpu_pane_title{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    border-bottom: 2px solid black;
+}
+
+.cpu_pane_title_img{
+    margin: 5px;
+    width: 35px;
+}
+
+.cpu_pane_title_text{
+    margin: 10px;
+    text-align: center;
+}
+
+.cpu_pane_core_info{
+    display: flex;
+    flex-direction: row;
+    height: 79%;
+    
+}
+
+.cpu_pane_core_info_usage_list{
+    width: 400px;
+    border-right: 2px solid black;
+}
+
+
+
+.cpu_pane_core_info_usage_list_status{
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    border-bottom: 2px solid black;
+}
+
+.cpu_show_little_pane{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.cpu_show_little_proceress{
+    margin-left: 10px;
+    height: 10px;
+    width: 220px;
+    border: 1px solid black;
+   
+}
+.cpu_show_little_proceress_currect{
+    width: 1%;
+    height: 100%;
+    background-color: #15bff7;
+}
+.cpu_show_text{
+    margin: 3px;
+    font-size: 0.725em;
+}
+
+.cpu_li_core{
+margin-top: 10px;
+display: flex;
+flex-direction: column;
+/* border: 2px solid blue; */
+}
+
+.cpu_li_core_text{
+    position: relative;
+    margin-top: 10px;
+    margin: 5px;
+    font-size: 0.825em;
+}
+
+
+.mem_pane_body{
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+}
+
+/* 复用 */
+.memory_pane_body{
+width: 50%;
+height: 100%;
+
+}
+
+.memory_pane_title{
+    display: flex;
+    flex-direction: row;
+    
+    height: 30px;
+    border-bottom: 2px solid black;
+}
+
+.memory_pane_title_img{
+    /* border: 2px solid rgb(214, 137, 214); */
+    margin-top: 5px; 
+    margin-left: 10px;
+    width: 30px;
+}
+
+.memory_pane_title_text{
+    font-weight: bold;
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+.memory_pane_list{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 76%;
+    
+}
+
+.memory_pane_list_line{
+    height: 100%;
+    /* border: 2px solid red; */
+    border-right: 2px solid black;
+    width: 60%;
+}
+.memory_pane_list_info_pane{
+    display: flex;
+    flex-direction: column;
+   
+    width: 40%;
+    height: 100%;
+ border-right: 1px solid black;
+}
+
+.memory_pane_list_info_pane_text{
+    margin-left: 9px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 0.925em;
+}
+.memory_pane_list_info_pane_procress{
+    border: 1px solid black;
+    height: 10px;
+    width: 150px;
+    margin: 10px;
+}
+
+.memory_pane_list_info_pane_procress_currect{
+    width: 1%;
+    height: 100%;
+    background-color: #15bff7;
+}
+
+.memory_pane_list_info_pane_usage{
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    /* border: 2px solid purple; */
+}
+
+/*  */
+.cpu_line_chart_pane{
+    width: 70%;
+    height: 100%;
+
+   
+}
+

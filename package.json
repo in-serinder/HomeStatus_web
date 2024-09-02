@@ -1,0 +1,32 @@
+{
+  "name": "statushome",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vue-cli-service serve",
+    "serve:production": "vue-cli-service serve --mode production"
+  },
+  "dependencies": {
+    "@xterm/xterm": "^5.5.0",
+    "axios": "^1.7.2",
+    "echarts": "^5.5.1",
+    "js-cookie": "^3.0.5",
+    "path": "^0.12.7",
+    "ssh2": "^1.15.0",
+    "terser": "^5.31.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.2",
+    "vue-router-cache": "^1.0.6",
+    "xterm-addon-attach": "^0.9.0",
+    "xterm-addon-fit": "^0.8.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "rollup-plugin-esbuild": "^6.1.1",
+    "vite": "^5.2.0"
+  }
+}

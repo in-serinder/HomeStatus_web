@@ -1,0 +1,146 @@
+.status_deflaut_body{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    width:1355px;
+    height: 100%;
+    /* overflow:auto; */
+}
+
+.base_hardware_info_pane_body{
+    margin: 15px;
+    border: 2px solid green;
+    height: 100%;
+    width: 950px;
+    background-color: #d7e2e6;
+    position: absolute;
+    border-bottom: 3px solid #15bff7;
+}
+
+.base_disk_infolist_body{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* border: 2px solid purple; */
+    height: 100%;
+    width: 305px;
+    right: 0px;
+    background-color: #d7e2e6;
+    border-bottom: 3px solid #15bff7;
+}
+
+.disk_info_title{
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+.disk_info_title_img{
+    margin: 5px;
+    width: 35px;
+}
+
+.disk_info_title_img_lab{
+    position: absolute;
+    font-size: 1.35em;
+    left: 55px;
+    margin-top: 7px;
+    text-align: center;
+    font-weight:bold;
+}
+
+.disk_info_body{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+}
+
+
+.disk_show_area{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 47px;
+    height: 90%;
+    
+}
+
+.disk_pane{
+    display: flex;
+    flex-direction: column;
+    border: #15bff7 2px solid;
+    height: 70px;
+}
+
+.disk_pane_gp{
+    display: flex;
+    flex-direction: row;
+
+    border: green 2px solid;
+}
+
+.disk_pane_label{
+    display: flex;
+    font-size: 15px;
+    flex-direction: row;
+    border: blue 2px solid;
+    height: 20px;
+}
+
+.disk_pane_label_divces{
+    margin-left: 20px;
+}
+
+.disk_pane_img{
+    width: 37px;
+    margin: 3px;
+}
+
+.disk_pane_img_usage{
+    margin-left: 3px;
+    font-size: 1em;
+    position: relative;
+    margin-top: 7px;
+}
+
+.disk_pane_process{
+    position: relative;
+    margin-top: 10px;
+    border: 1px solid black;
+    height: 15px;
+    width: 200px;
+}
+
+.disk_pane_process_currect{
+    position: relative;
+    height: 100%;
+    width: 20%;
+    background-color: #15bff7;
+}
+
+
+
+@media (min-width:1355px){
+    .status_deflaut_body{
+        display: flex;
+        flex-direction: row;
+        border: 2px solid black;
+        width:100%;
+        height: 100%;
+        /* overflow:auto; */
+    }
+    .base_hardware_info_pane_body{
+        margin: 15px;
+        border: 2px solid green;
+        height: 100%;
+        width: 70%;
+        background-color: #d7e2e6;
+        position: absolute;
+        border-bottom: 3px solid #15bff7;
+    }
+    
+}

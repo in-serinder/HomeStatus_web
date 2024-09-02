@@ -1,0 +1,9 @@
+.img-contain{
+    position: relative;
+}
+/* 预留 */
+
+.fade-imge{
+    opacity: 0;
+    transition: opacity 2s;
+}

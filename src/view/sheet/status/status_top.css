@@ -1,0 +1,41 @@
+.status_top_body{
+ 
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0px;
+     width: 100%;
+     height: 35px;
+    /* border: 2px solid #ff0000; */
+    align-items: center;
+    text-align: right;
+
+    background-color: #c4bebe;
+    border-top: #257f99 solid 1px ;
+    border-bottom: #257f99 solid 1px ;
+}
+
+.status_top_select_pane{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    height: 25px;
+    text-align: right;
+    /* border: 2px solid blue; */
+    width: 195px;
+    right: 15px;
+}
+.status_top_select_pane_link{
+    color: #2c2c2c;
+    font-weight: bold;
+    align-self: center;
+    font-size: 0.926em;
+    /* border: 2px solid black; */
+    
+}
+
+.status_top_time_pane{
+    position: absolute;
+    margin-left: 10px;
+    
+}

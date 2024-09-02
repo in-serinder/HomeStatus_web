@@ -1,0 +1,45 @@
+.home_body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    /* background-color: #333333; */
+    width: 1535px;
+    height: 100%;
+    /* border: 2px solid black; */
+  
+}
+/* @media (min-width:1175px){
+    .home_body{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        left: 0;
+        top: 60px;
+
+        width: 1535px;
+        height: 100%;
+        
+
+      
+    }
+} */
+
+/* 
+@media (min-width:1150px){
+    .home_body{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        left: 0;
+        top: 60px;
+
+        width: 1535px;
+        height: 100%;
+        
+
+      
+    }
+} */

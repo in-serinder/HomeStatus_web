@@ -1,0 +1,42 @@
+.status_body{
+    display: flex;    
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    left: 0px;
+    top: 60px;
+
+
+    border: 2px solid purple;
+}
+
+
+.status_comp_pane{
+    border: 2px solid green;
+    width: 100%;
+    margin-top: 36px;
+}
+
+
+.status_classic{
+    display: none;
+}
+
+@media (max-width:1360px){
+    .status_body{
+        display: flex;    
+        justify-content: space-between;
+        position: absolute;
+        width: 1360px;
+        height: 100%;
+        text-align: left;
+        left: 0px;
+        top: 60px;
+    
+    
+        border: 2px solid purple;
+    }
+
+}

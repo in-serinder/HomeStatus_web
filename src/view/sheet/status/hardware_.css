@@ -1,0 +1,125 @@
+.status_def_hardware_body{
+    border: 2px solid blue;
+    
+}
+
+.network_pane_body{
+    display: flex;
+    flex-direction: column;
+    
+    height: 150px;
+
+    border-bottom: 2px solid black;
+}
+
+.network_pane_body_title{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    height: 32px;
+    border-bottom: 2px solid black;
+}
+
+.network_pane_body_title_img{
+    margin-left: 10px;
+    height: 30px;
+}
+
+.network_pane_body_title_text{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1em;
+}
+
+.network_pane_body_info_pane{
+    display: flex;
+    height: 75%;
+    flex-direction: row;
+    
+}
+
+.network_pane_body_select_pane{
+    /* border: 2px solid red; */
+    border-right: 1px solid black;
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+}
+
+.network_pane_body_text_pane{
+    /* border: 2px solid red; */
+    border-right: 1px solid black;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.network_pane_body_line_pane{
+
+    width: 55%;
+    height: 100%; 
+}
+
+/*  */
+
+.network_pane_body_select_pane_list{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    height: 28px;
+    border-bottom: 2px solid black;
+    
+}
+
+.network_pane_body_select_pane_list_img{
+    width: 25px;
+    margin-left: 5px;
+}
+
+.network_pane_body_select_pane_list_text{
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 5px;
+    margin-top: 5px;
+
+}
+
+.network_pane_body_text_pane_text{
+    margin-top: 2px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 0.825em;
+
+}
+
+.app_list_body{
+    
+    height: 30%;
+}
+
+.app_list_body_title{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    height: 30px;
+    border-bottom: 2px solid black;
+}
+
+.app_list_body_title_img{
+    margin-left: 5px;
+}
+
+.app_list_body_title_text{
+    margin-left: 5px;
+    margin-top: 7px;
+    font-weight: bold;
+}
+
+.app_list_body_table_pane{
+    border: 2px solid red;
+    height: auto;
+}

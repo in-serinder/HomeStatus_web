@@ -1,0 +1,72 @@
+.database_status_boy{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.database_status_pane{
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    height: 500px;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 2px solid black;
+
+    background-color: #edf1f3;
+    border-bottom: #6fb7cf solid 3px;
+
+}
+
+/*  */
+.database_status_userinfo{
+    position: absolute;
+    text-align: left;
+    height: 35%;
+    width: 100%;
+
+    border: 2px solid black;
+
+}
+/*  */
+.database_status_userinfo_user_img{
+    position: absolute;
+    height: 35px;
+    width: 25px;
+    margin: 5px;
+}
+
+
+.database_status_userinfo_username{
+    position: absolute;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 35px;
+}
+
+.database_status_userinfo_userprim{
+    position: absolute;
+    border: 2px red solid;
+    width: 100%;
+    height: 75%;
+    margin-top: 45px;
+
+    border-top: 2px solid #2c2c2c;
+    
+}
+/*  */
+.database_status_userinfo_userprim_show{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.database_status_userinfo_userprim_show_label{
+    font-size: 0.625em;
+    margin-left: 5px;
+}
+
+/* database list */

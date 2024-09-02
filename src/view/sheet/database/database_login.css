@@ -1,0 +1,174 @@
+.database_login_body{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    
+    height: 100%;
+    border: 2px solid red;
+    z-index: 999;
+}
+
+.database_login_background_full{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    width: 100%;
+    border: 2px solid red;
+    z-index: 999;
+}
+
+.database_login_top_icon{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-bottom: 300px;
+    width: 300px;
+
+}
+
+.database_login_pane{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 420px;
+    height: 200px;
+
+    background-color: #d7e2e6;
+    border-bottom: 3px solid #15bff7;
+    /* border: 2px solid black; */
+}
+
+.database_login_pane_input{
+    display: flex;
+    position: absolute;
+    /* border: red 2px solid; */
+    width: 100%;
+    height: 50%;
+    top: 0px;
+    
+}
+
+.database_login_pane_input_user{
+    
+    text-align: left;
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+    height: 50%;
+    /* s */
+    top: 0px;
+}
+
+.database_login_pane_input_password{
+    
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid purple; */
+    bottom: 0px;;
+}
+
+.database_login_pane_input_img{
+    margin-top: 10px;
+    margin-left: 14%;
+    text-align: left;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+
+.database_login_pane_input_input_label{
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.825em;
+
+    margin-left: 21%;
+    margin-top: 18px;
+}
+
+.database_login_pane_input_input_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 16px;
+    border: none;
+    margin-left: 38%;
+    width:150px;
+    height: 18px;
+
+    background-color: #ebebeb;
+    border-bottom: 1px solid #2c2c2c;
+}
+
+.database_login_pane_input_input_set{
+    position: absolute;
+    /* border: 2px solid purple; */
+    width: 100%;
+    margin-top: 23%;
+    height: 100%;
+}
+
+.database_login_pane_input_input_rember_pwd{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    margin-left: 14%;
+    margin-top: 10px;
+
+}
+
+.database_login_pane_input_input_rember_pwd_lab{
+    position: absolute;
+    left: 75px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 0.725em;
+}
+
+.database_login_pane_input_input_rember_pwd_img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+
+    left: 53px;
+}
+
+.database_login_pane_input_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    background-color: #15bff7;
+
+    margin-left: 31%;
+    margin-top: 11%;
+
+}
+
+.database_login_pane_input_button_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.925em;
+}
+
+.database_login_pane_status{
+    position: absolute;
+
+    text-align: right;
+    width: 45px;
+    right: 0px;
+    height: 35%;
+
+    margin-top: 13%;
+}
