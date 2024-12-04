@@ -140,7 +140,7 @@ export default {
 
         };
     },
-    created() {  //页面载入
+    created() {  //页面载
         this.getcity_fromip();
 
     },
@@ -188,6 +188,11 @@ export default {
 
         },
         get_weather(city_code) { //双获取
+            if (city_code.length==0) {
+                city_code = "110000"
+            }
+            // 空城市
+            console.log("cotiy_code",city_code)
             axios.all([
                 axios.get("https://restapi.amap.com/v3/weather/weatherInfo?city=" + city_code + "&key=" + this.API_KEY),
                 axios.get("https://restapi.amap.com/v3/weather/weatherInfo?city=" + city_code + "&extensions=all&key=" + this.API_KEY)
