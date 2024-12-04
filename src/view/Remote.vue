@@ -1,6 +1,6 @@
 <template>
     <div class="remote_body">
-        <!-- <Remote_login class="remote_login"></Remote_login> -->
+        <Remote_login class="remote_login"></Remote_login>
         <Remote_console></Remote_console>
     </div>
 </template>

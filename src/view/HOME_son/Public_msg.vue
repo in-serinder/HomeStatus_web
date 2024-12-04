@@ -70,7 +70,7 @@
 </style>
 
 <script>
-
+import config from '../../config';
 import axios from 'axios';
 
 
@@ -79,7 +79,8 @@ export default{
         return{
             log_msg:[],
             public_msg:[],
-
+            api_url:config.api.baseURL,
+            api_port:config.api.port.api_master,
             loading:false,
 
             divColor_err: "transparent",
@@ -95,7 +96,7 @@ export default{
     },
     methods:{
         get_log(type){
-            axios.get("http://192.168.5.10:7101/api/"+type)
+            axios.get("http://${api_url}:${api_port}/api/"+type)
             .then(response=>response.data)
             .then(data=>this.set_msg(data))
             .catch(error=>console.error(error));
@@ -107,7 +108,7 @@ export default{
         },
         
         get_public_msg(){
-            axios.get("http://192.168.5.10:7101/api/public_msg")
+            axios.get("http://${api_url}:${api_port}/api/public_msg")
             .then(response=>response.data)
             .then(data=>this.set_public_msg(data))
             .catch(error=>console.error(error));

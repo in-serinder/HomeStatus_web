@@ -90,6 +90,8 @@
 
 
 <script>
+// import { clone } from 'echarts/types/src/export/api/util.js';
+import config from '../../config';
 import axios from 'axios';
 
 
@@ -98,6 +100,8 @@ export default{
         return{
             baseinfo:null,
             loading:true,
+            api_url:config.api.baseURL,
+            api_port:config.api.port.api_master,
             disks:[],
             ststaus:{},
 
@@ -107,13 +111,14 @@ export default{
     created(){  //页面周期
         this.get_baseinfo();
         this.get_router();
+        // console.log('baseinfo${api_url}:${api_port}')
     },
     methods:{
        get_router(){
         console.log(this.$router.path)
         },
         get_baseinfo() {
-            axios.get("http://192.168.5.10:7101/api/baseinfo")
+            axios.get('http://'+this.api_url+':'+this.api_port+'/api/baseinfo')
                 .then(response=>response.data)
                 .then(data=>this.update_basedata(data))
                 .catch(error=>console.error(error));

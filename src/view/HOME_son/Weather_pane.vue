@@ -100,6 +100,9 @@
 
 <script>
 
+
+import config from '../../config.js';
+
 import axios from 'axios';
 
 //图片资源
@@ -122,15 +125,18 @@ import unkonw from '../../media/weather/unknow.png'
 
 
 
-export default {
 
+
+export default {
+    
 
     data() {
         return {
             weather_pane:'Home_weather',
 
             loading:true,
-            API_KEY: "0e4beb61ae3aa262060538e57e5c84db",
+            // api:config.api.port,
+            API_KEY: config.api.key,
             cityData: null,
             today_weather: null,
             forecat_weather: null,
@@ -142,6 +148,7 @@ export default {
     },
     created() {  //页面载
         this.getcity_fromip();
+        console.log(this.api)
 
     },
 

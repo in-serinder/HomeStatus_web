@@ -50,6 +50,8 @@
 
 <script>
 
+import config from '../../config';
+
 function formatTime(seconds) {
   let days = Math.floor(seconds / (24 * 3600));
   let hours = Math.floor((seconds % (24 * 3600)) / 3600);
@@ -126,7 +128,7 @@ function formatTime(seconds) {
         }
 
         function fetchData() {
-            fetch('http://192.168.5.10:6323')
+            fetch('http://'+config.api.baseURL+':'+config.api.port.class_status)
                 .then(response => response.json())
                 .then(data => updateStatus(data))
                 //.catch(error => console.error(error));
