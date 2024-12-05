@@ -31,14 +31,14 @@
                 <!-- 服务 -->
                 <!-- <div class="Rs_content_pane_content_pane_services">service</div> -->
                 <!-- 容器 -->
-                <div class="Rs_content_pane_content_pane_docker">
-                    <!-- 浏览窗口 c向类型，r向应用-->
-                    <div class="Rs_content_pane_content_pane_docker_type">
+                <!-- <div class="Rs_content_pane_content_pane_docker"> -->
+                <!-- 浏览窗口 c向类型，r向应用-->
+                <!-- <div class="Rs_content_pane_content_pane_docker_type">
                         <div class="Rs_content_pane_content_pane_docker_type_title">
                             <div>type</div>
-                        </div>
-                        <!-- list area -->
-                        <div class="Rs_content_pane_content_pane_docker_container_pane">
+                        </div> -->
+                <!-- list area -->
+                <!-- <div class="Rs_content_pane_content_pane_docker_container_pane">
                             <div class="Rs_content_pane_content_pane_docker_container_block">
                                 <div class="Rs_content_pane_content_pane_docker_container_block_half1">
                                     <img src="../../media/svg/docker.svg" alt="">
@@ -49,12 +49,38 @@
                                     </span>
                                 </div>
                             </div>
+                        </div> -->
+                <!-- list end -->
+                <!-- </div> -->
+                <!-- </div> -->
+                <!-- 文件 -->
+                <div class="Rs_content_pane_content_pane_Files">
+                    <div class="Rs_content_pane_content_pane_Files_dirview">
+                        <!-- 详细类文件视图 -->
+                        <!-- DIR -->
+                        <div>
+                            <span>
+                                <img src="../../media/svg/dir.svg" alt="">
+                                <p>dir_name</p>
+                            </span>
+                            <span style="margin-left: auto;border-left: 1px solid black;">
+                                <p>date</p>
+                                <p>user asscess</p>
+                            </span>
+
+                        </div>
+                        <!-- File -->
+                        <div>
+                            <span>
+                                <img src="../../media/svg/file_object.svg" alt="">
+                                <p>file_name</p>
+                            </span>
+                            <span style="margin-left: auto;border-left: 1px solid black;">
+                                <p>date</p>
+                                <p>user asscess</p>
+                            </span>
                         </div>
                     </div>
-                </div>
-                <!-- 文件 -->
-                <div>
-                    <div></div>
                 </div>
                 <!-- 日志 -->
                 <div></div>

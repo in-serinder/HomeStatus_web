@@ -14,6 +14,8 @@ import Status_default from './view/status/Status_default.vue'
 import Status_classics from './view/status/Status_classic.vue'
 import Status_netdata from './view/status/Status_netdata.vue'
 
+import resources_IndependentPage from './view/resources_son/resources_IndependentPage.vue'
+
 import Page_404 from './view/Page_404.vue'
 
 
@@ -31,7 +33,10 @@ const router=createRouter(
                 {path:'classics',name:'Status_classics',meta:{title:'Status_Classics'},component:Status_classics}
             ]}, 
             {path:'/Database',name:'Database',meta:{title:'Database'},component:Database},
-            {path:'/Resources',name:'Resources',meta:{title:'Resources'},component:Resources},
+            {path:'/Resources',name:'Resources',meta:{title:'Resources'},component:Resources,children:
+            [
+                {path:'IndependentMirrorPage',name:'resources_IndependentPage',meta:{title:'IndependentPage'},component:resources_IndependentPage}
+            ]},
             {path:'/Netinfo',name:'Netinfo',meta:{title:'Netinfo'},component:Netinfo},
             {path:'/Remote',name:'Remote',meta:{title:'Remote'},component:Remote},
 
