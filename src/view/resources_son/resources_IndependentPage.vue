@@ -14,9 +14,23 @@
             <!-- content -->
             <div class="RSMP_body_mirror_sites_content">
                 <div class="RSMP_body_mirror_sites_content_select">
-                    <div></div>
+                    <span>
+                        <p>USTC</p>
+                    </span>
+                    <span>
+                        <p>Tsinghua</p>
+                    </span>
+                    <span>
+                        <p>Lzu</p>
+                    </span>
+                    <span>
+                        <p>Aliyun</p>
+                    </span>
+                    <span>
+                        <p>163</p>
+                    </span>
                 </div>
-                <!-- <iframe src="https://mirrors.ustc.edu.cn/" frameborder="0"></iframe> -->
+                <iframe src="https://mirrors.ustc.edu.cn/" frameborder="0"></iframe>
             </div>
         </div>
     </div>

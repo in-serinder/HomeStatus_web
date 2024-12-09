@@ -112,5 +112,12 @@ export default {
         home_service_server:{
             ip:'192.168.5.10'
         }
+    },
+    Mirror_site:{
+        USTC:'https://mirrors.ustc.edu.cn/',
+        Tsinghua:'https://mirrors.tuna.tsinghua.edu.cn/',
+        LZU:'https://mirror.lzu.edu.cn/',
+        Aliyun:'https://developer.aliyun.com/mirror/?keyword=debian',
+        Site163:'https://mirrors.163.com/'
     }
 }
