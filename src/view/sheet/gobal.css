@@ -1,0 +1,15 @@
+/* 滚动条通用 */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #535252;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f4f1f1;
+    border-radius: 8px;
+}

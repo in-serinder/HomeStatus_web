@@ -1,5 +1,6 @@
 import { KeepAlive, createApp } from 'vue'
 import { createRouter , createWebHistory} from 'vue-router'
+// import Vue from 'vue'
 import './style.css'
 import App from './App.vue'
 import Home from './view/Home.vue'
@@ -15,8 +16,12 @@ import Status_classics from './view/status/Status_classic.vue'
 import Status_netdata from './view/status/Status_netdata.vue'
 
 import resources_IndependentPage from './view/resources_son/resources_IndependentPage.vue'
+import resources_all from './view/resources_son/resources_all.vue'
 
-import Page_404 from './view/Page_404.vue'
+// import Page_404 from './view/Page_404.vue'
+import PageNotFound from './view/Page_404.vue'
+
+
 
 
 
@@ -35,13 +40,14 @@ const router=createRouter(
             {path:'/Database',name:'Database',meta:{title:'Database'},component:Database},
             {path:'/Resources',name:'Resources',meta:{title:'Resources'},component:Resources,children:
             [
+                {path:'',name:'Resources',meta:{title:'Resources'},component:resources_all},
                 {path:'IndependentMirrorPage',name:'resources_IndependentPage',meta:{title:'IndependentPage'},component:resources_IndependentPage}
             ]},
             {path:'/Netinfo',name:'Netinfo',meta:{title:'Netinfo'},component:Netinfo},
             {path:'/Remote',name:'Remote',meta:{title:'Remote'},component:Remote},
 
            
-            // {path:'*',name:'404',meta:{title:'404'},component:Page_404}
+            {path:'/:pathMatch(.*)*',name:'404',meta:{title:'Pages Not Found'},component:PageNotFound},
         ]
     }
 )

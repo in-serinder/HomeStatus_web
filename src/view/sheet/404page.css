@@ -1,0 +1,28 @@
+.page404{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid red;
+    box-shadow: 2px 2px 2px 2px gray;
+    flex-direction: column;
+}
+
+.show{
+    border: 2px solid red;
+    margin: 0;
+}
+
+.page404_title{
+    /* border: 2px solid red; */
+    margin: 10px;
+}
+
+.page404 img{
+    width: 300px;
+}
+
+.page404 span{
+    font-size: 0.725em;
+    
+}

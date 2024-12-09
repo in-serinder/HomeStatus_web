@@ -40,6 +40,9 @@ export default {
             Download:{
 
             },
+            Storage:{
+
+            },
             Tools:{
 
             },
@@ -71,6 +74,9 @@ export default {
             Game:{
 
             },
+            Storage:{
+
+            },
             File_browser:{
 
             },
@@ -79,6 +85,9 @@ export default {
         arm_server:{
             IP:'192.168.5.20',
             Download:{
+
+            },
+            Storage:{
 
             },
             Tools:{

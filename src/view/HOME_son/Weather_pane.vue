@@ -25,23 +25,23 @@
                             <ul>
                                 <li id="weather" style=" left:0;" class="li_item" v-if="!loading && cityData">Weather:{{
                                     cityData.weather }}</li>
-                                    <span class="li_item" v-if="loading">Weather:Loading...</span>
+                                <span class="li_item" v-if="loading">Weather:Loading...</span>
 
                                 <li id="temperature" style=" " class="li_item" v-if="!loading && cityData">
                                     Temperature:{{ cityData.temperature }}</li>
-                                    <span class="li_item" v-if="loading">Temperature:Loading...</span>
+                                <span class="li_item" v-if="loading">Temperature:Loading...</span>
 
                                 <li id="winddirection" style=" " class="li_item" v-if="!loading && cityData">
                                     Winddirection:{{ cityData.winddirection }}</li>
-                                    <span class="li_item" v-if="loading"> Winddirection:Loading...</span>
+                                <span class="li_item" v-if="loading"> Winddirection:Loading...</span>
 
                                 <li id="windpower" style=" " class="li_item" v-if="!loading && cityData">
                                     Windpower:{{ cityData.windpower }}</li>
-                                    <span class="li_item" v-if="loading"> Windpower:Loading...</span>
+                                <span class="li_item" v-if="loading"> Windpower:Loading...</span>
 
                                 <li id="humidity" style=" " class="li_item" v-if="!loading && cityData">
                                     Humidity:{{ cityData.humidity }}</li>
-                                    <span class="li_item" v-if="loading">Humidity:Loading...</span>
+                                <span class="li_item" v-if="loading">Humidity:Loading...</span>
 
                             </ul>
                             <a @click="getcity_name" href="#" class="common_text">Custom city address</a>
@@ -128,13 +128,13 @@ import unkonw from '../../media/weather/unknow.png'
 
 
 export default {
-    
+
 
     data() {
         return {
-            weather_pane:'Home_weather',
+            weather_pane: 'Home_weather',
 
-            loading:true,
+            loading: true,
             // api:config.api.port,
             API_KEY: config.api.key,
             cityData: null,
@@ -158,19 +158,19 @@ export default {
 
         fadeImg() {
             const cloudImg = this.$refs.cloud_img;
-  
-  function animate() {
-      cloudImg.style.opacity = 1;
-      setTimeout(() => {
-          cloudImg.style.opacity = 0;
-          setTimeout(() => {
-              cloudImg.style.opacity = 1;
-              animate(); // 递归调用以实现循环
-          }, 2000);
-      }, 2000);
-  }
 
-  animate(); // 第一次调用开始动画
+            function animate() {
+                cloudImg.style.opacity = 1;
+                setTimeout(() => {
+                    cloudImg.style.opacity = 0;
+                    setTimeout(() => {
+                        cloudImg.style.opacity = 1;
+                        animate(); // 递归调用以实现循环
+                    }, 2000);
+                }, 2000);
+            }
+
+            animate(); // 第一次调用开始动画
         },
 
 
@@ -195,11 +195,11 @@ export default {
 
         },
         get_weather(city_code) { //双获取
-            if (city_code.length==0) {
+            if (city_code.length == 0) {
                 city_code = "110000"
             }
             // 空城市
-            console.log("cotiy_code",city_code)
+            console.log("cotiy_code", city_code)
             axios.all([
                 axios.get("https://restapi.amap.com/v3/weather/weatherInfo?city=" + city_code + "&key=" + this.API_KEY),
                 axios.get("https://restapi.amap.com/v3/weather/weatherInfo?city=" + city_code + "&extensions=all&key=" + this.API_KEY)
@@ -219,10 +219,11 @@ export default {
         Update_weather(data) {
             this.cityData = data.lives[0];
             //console.log(data.lives[0])
-            this.loading=false;
+            this.loading = false;
             //启用天气图样式
             this.fadeImg()
             this.fuzzyKey(data.lives[0].weather)
+            console.log(this.weather_icon)
 
         },
         Set_table(data) {

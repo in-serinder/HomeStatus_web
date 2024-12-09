@@ -35,6 +35,7 @@
 .RSM_body_content{
     border: 2px solid green;
     height: calc(100% - 31px);
+    overflow-y: scroll;
 }
 
 .RSM_body_content div{
@@ -52,6 +53,7 @@
 }
 
 .RSM_body_content div span{
-    margin-right: 20px;
+    border: 2px solid red;
+    margin-right: 10px;
     margin-left: auto;
 }

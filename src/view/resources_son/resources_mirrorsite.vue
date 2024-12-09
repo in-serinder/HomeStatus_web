@@ -18,7 +18,8 @@
                 <img src="../../media/svg/mirror_Files.svg" alt="">
                 <a href="">file_name</a>
 
-                <span>sync_time</span>
+                <span> sync_status--sync_time</span>
+
             </div>
         </div>
     </div>
