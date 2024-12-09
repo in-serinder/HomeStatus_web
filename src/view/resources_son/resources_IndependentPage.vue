@@ -36,6 +36,17 @@
     </div>
 </template>
 
+<script>
+
+export default {
+    data() {
+        return {
+
+        }
+    }
+}
+</script>
+
 <style>
 @import url(../sheet/resources/mirrors_page.css);
 @import url(../sheet/gobal.css);
