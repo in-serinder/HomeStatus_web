@@ -9,7 +9,7 @@
 
 .base_hardware_info_pane_body{
     margin: 15px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     height: 100%;
     width: 950px;
     background-color: #d7e2e6;
@@ -72,7 +72,8 @@
 .disk_pane{
     display: flex;
     flex-direction: column;
-    border: #15bff7 2px solid;
+    /* border: #15bff7 2px solid; */
+    border-bottom: #2f2f2f 1px solid;
     height: 70px;
 }
 
@@ -80,14 +81,14 @@
     display: flex;
     flex-direction: row;
 
-    border: green 2px solid;
+    /* border: green 2px solid; */
 }
 
 .disk_pane_label{
     display: flex;
     font-size: 15px;
     flex-direction: row;
-    border: blue 2px solid;
+    /* border: blue 2px solid; */
     height: 20px;
 }
 

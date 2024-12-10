@@ -19,6 +19,9 @@ import resources_IndependentPage from './view/resources_son/resources_Independen
 import resources_all from './view/resources_son/resources_all.vue'
 import resources_dockerdetail from './view/resources_son/resources_dockerdetail.vue'
 
+import Netinfo_body from './view/Netinfo/Netinfo_body.vue'
+import Netinfo_hostdetail from './view/Netinfo/Netinfo_hostdetail.vue'
+
 // import Page_404 from './view/Page_404.vue'
 import PageNotFound from './view/Page_404.vue'
 
@@ -45,7 +48,12 @@ const router=createRouter(
                 {path:'IndependentMirrorPage',name:'resources_IndependentPage',meta:{title:'IndependentPage'},component:resources_IndependentPage},
                 {path:'docker',name:'docker',meta:{title:'Docker'},component:resources_dockerdetail}
             ]},
-            {path:'/Netinfo',name:'Netinfo',meta:{title:'Netinfo'},component:Netinfo},
+            {path:'/Netinfo',name:'Netinfo',meta:{title:'Netinfo'},component:Netinfo,children:
+            [
+                {path:'',name:'Netinfo_body',meta:{title:'Netinfo'},component:Netinfo_body},
+                {path:'hostdetail',name:'Netinfo_hostdetail',meta:{title:'Netinfo_hostdetail'},component:Netinfo_hostdetail},
+            ]
+        },
             {path:'/Remote',name:'Remote',meta:{title:'Remote'},component:Remote},
 
            

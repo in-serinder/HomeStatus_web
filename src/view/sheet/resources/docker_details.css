@@ -1,0 +1,132 @@
+.RDD_body{
+    /* border: 1px solid black; */
+    /* border-bottom: 3px solid black; */
+    height: 100%;
+    width: 100%;
+    top: 35px;
+    /* margin-top: 600px; */
+    position: absolute;
+   
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+}
+
+.RDD_docker_pane1P{
+    /* border: 2px solid red; */
+    border-top: 3px solid black;
+    box-shadow: 3px 3px 3px gray;
+    border-left: 0.5px solid gray;
+    width: 300px;
+    height: 600px;
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+}
+
+.RDD_docker_pane1P_container{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.RDD_docker_pane1P_container_info{
+    height: 100%;
+    /* border: 2px solid blue; */
+    
+}
+
+.RDD_docker_pane1P_container_info p{
+    font-size: 0.925em;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.RDD_docker_pane1P_container_info a{
+    font-size: 0.925em;
+    margin: 0;
+    text-align: left;
+
+}
+.RDD_docker_pane1P_container_info div{
+    height: 100px;
+    /* border: 2px saddlebrown solid; */
+    justify-content: center;
+    align-items: center;
+}
+
+.RDD_docker_pane1P_container_info div img{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
+/*  */
+.RDD_docker_pane1P_container_icon{
+    border-bottom: 1px solid gray;
+    justify-content: center;
+    align-items: center;
+}
+
+.RDD_docker_pane1P_container_icon img{
+    width: 140px;
+    height: 140px;
+}
+
+.RDD_docker_pane1P_container_link{
+    margin-bottom: auto;
+    margin-top: 110px;
+    /* border: 2px salmon solid; */
+    /* text-align: right; */
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 40px;
+}
+
+.RDD_docker_pane1P_container_link img{
+    margin-right: 10px;
+    width: 30px;
+}
+
+.RDD_docker_pane1P_container_link p{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.RDD_docker_pane2P{
+    margin-left: 70px;
+    margin-top: 4px;
+    border-top: 3px solid black;
+    /* border: 2px solid blue; */
+    width: calc(100% - 300px);
+    display: flex;
+    border-left: 1px solid gainsboro;
+    flex-direction: column;
+    height: 800px;
+    box-shadow: 2px 2px 2px gray;
+
+}
+
+.RDD_docker_pane2P_title{
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+.RDD_docker_pane2P_info{
+    font-size: 1em;
+    justify-content: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    text-align: left;
+    overflow-x: auto;
+    overflow-y: auto;
+}

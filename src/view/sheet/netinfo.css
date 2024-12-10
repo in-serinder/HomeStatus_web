@@ -1,0 +1,11 @@
+.Netinfo_body{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+    
+}
