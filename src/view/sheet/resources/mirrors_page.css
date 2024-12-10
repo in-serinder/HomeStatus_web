@@ -71,3 +71,7 @@ font-weight: bold;
 }
 
 
+.RSMP_body_mirror_sites_content_select_iselected{
+    background-color: #000000;
+    color: white;
+}

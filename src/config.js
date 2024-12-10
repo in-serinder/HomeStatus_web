@@ -116,8 +116,9 @@ export default {
     Mirror_site:{
         USTC:'https://mirrors.ustc.edu.cn/',
         Tsinghua:'https://mirrors.tuna.tsinghua.edu.cn/',
-        LZU:'https://mirror.lzu.edu.cn/',
-        Aliyun:'https://developer.aliyun.com/mirror/?keyword=debian',
+        Lzu:'https://mirror.lzu.edu.cn/',
+        SJTU:'https://ftp.sjtu.edu.cn/',
+        Aliyun:'https://developer.aliyun.com/mirror/',
         Site163:'https://mirrors.163.com/'
     }
 }
