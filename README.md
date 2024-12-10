@@ -5,3 +5,5 @@
 npm install
 npm run dev
 ```
+### Config File
+` src/config.js`
