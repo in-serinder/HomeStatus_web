@@ -104,13 +104,14 @@ export default{
             api_port:config.api.port.api_master,
             disks:[],
             ststaus:{},
-
+            url:'http://'+config.api.baseURL+':'+config.api.port.api_master+'/api/baseinfo'
 
         };
     },
     created(){  //页面周期
         this.get_baseinfo();
         this.get_router();
+        
         // console.log('baseinfo${api_url}:${api_port}')
     },
     methods:{
@@ -118,7 +119,8 @@ export default{
         console.log(this.$router.path)
         },
         get_baseinfo() {
-            axios.get('http://'+this.api_url+':'+this.api_port+'/api/baseinfo')
+            console.log(this.url,config.api.baseURL)
+            axios.get(this.url)
                 .then(response=>response.data)
                 .then(data=>this.update_basedata(data))
                 .catch(error=>console.error(error));

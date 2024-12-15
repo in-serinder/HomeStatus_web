@@ -100,7 +100,7 @@
     width: 100%;
     /* border: 2px solid yellow; */
     margin-top: 20%;
-    
+    overflow: auto;
     border-top: black solid 2px;
     border-top-width: 75%;
 }

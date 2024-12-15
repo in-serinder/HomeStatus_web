@@ -96,7 +96,7 @@ export default{
     },
     methods:{
         get_log(type){
-            axios.get("http://${api_url}:${api_port}/api/"+type)
+            axios.get('http://'+config.api.baseURL+':'+config.api.port.api_master+'/api/'+type)
             .then(response=>response.data)
             .then(data=>this.set_msg(data))
             .catch(error=>console.error(error));
@@ -108,7 +108,7 @@ export default{
         },
         
         get_public_msg(){
-            axios.get("http://${api_url}:${api_port}/api/public_msg")
+            axios.get('http://'+config.api.baseURL+':'+config.api.port.api_master+'/api/public_msg')
             .then(response=>response.data)
             .then(data=>this.set_public_msg(data))
             .catch(error=>console.error(error));
