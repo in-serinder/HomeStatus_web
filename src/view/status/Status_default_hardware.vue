@@ -133,13 +133,19 @@
 
 <script>
 import * as echarts from "echarts"
+import config from "../../config";
+import axios from "axios";
+
+
 import { onMounted } from "vue"
 
 
 
 export default{
 data(){
-
+    return{
+        url:'http://'+config.api.baseURL+':'+config.api.port.api_master+'/api/baseinfo'
+    }
 },
 mounted(){
     this.creat_cpu_line();

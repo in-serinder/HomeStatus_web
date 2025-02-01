@@ -137,6 +137,8 @@ function formatTime(seconds) {
         }
 
         fetchData();
+
+        
 </script>
 
 

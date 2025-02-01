@@ -74,7 +74,7 @@
     flex-direction: column;
     /* border: #15bff7 2px solid; */
     border-bottom: #2f2f2f 1px solid;
-    height: 70px;
+    height: 85px;
 }
 
 .disk_pane_gp{
@@ -84,16 +84,26 @@
     /* border: green 2px solid; */
 }
 
+.disk_device_label{
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 0.725em;
+}
+
 .disk_pane_label{
+    
     display: flex;
     font-size: 15px;
     flex-direction: row;
+    margin-bottom: 5px;
     /* border: blue 2px solid; */
     height: 20px;
 }
 
 .disk_pane_label_divces{
-    margin-left: 20px;
+    
+    font-size: 0.825em;
+    margin-left: 5px;
 }
 
 .disk_pane_img{
@@ -103,7 +113,7 @@
 
 .disk_pane_img_usage{
     margin-left: 3px;
-    font-size: 1em;
+    font-size: em;
     position: relative;
     margin-top: 7px;
 }

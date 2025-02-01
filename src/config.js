@@ -20,7 +20,7 @@ export default {
     },
     netdata:{
         home_service_server:{
-            ip:'192.168.5.10',
+            ip:'127.0.0.1',
             port:19999
             
         },

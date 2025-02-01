@@ -39,3 +39,15 @@
     margin-left: 10px;
     
 }
+.status_top_time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    /* background-color: #257f99; */
+}
+
+.status_top_time label{
+    font-size: 0.995em;
+    font-weight: bold;
+}

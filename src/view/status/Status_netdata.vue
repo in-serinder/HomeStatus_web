@@ -15,9 +15,7 @@ import config from '../../config';
 export default {
     data() {
         return {
-            netdata_ip: config.netdata.home_service_server.ip,
-            netdata_port: config.netdata.home_service_server.port,
-            url: 'http://'+netdata_ip+':'+netdata_port
+            url: 'http://'+config.netdata.home_service_server.ip+':'+config.netdata.home_service_server.port
         }
     },
     created() {
