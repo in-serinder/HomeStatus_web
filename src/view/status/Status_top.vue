@@ -21,6 +21,7 @@
 
 <script>
 
+import { onBeforeUnmount } from 'vue';
 import config from '../../config';
 import axios from 'axios';
 
@@ -29,24 +30,48 @@ export default {
     return {
       url: 'http://' + config.api.baseURL + ':' + config.api.port.api_master + '/api/date/localtime',
       date: [],
-      loading: true
+      loading: true,
+      dateUpdaterInterval: null
     };
   },
   created() {
     this.startDateUpdater();
+    // this.checkRouteAndExecute();
   },
+
+
+
   beforeDestroy() {
     this.stopDateUpdater();
   },
+      // router___f__x
+      onBeforeUnmount(){
+      this.stopDateUpdater();
+      console.log(level)
+    },
+
+
   methods: {
     startDateUpdater() {
       this.dateUpdaterInterval = setInterval(() => {
         this.get_date();
       }, 1000);
+      
     },
     stopDateUpdater() {
       clearInterval(this.dateUpdaterInterval);
     },
+
+// router
+checkRouteAndExecute() {
+      const currentPath = this.$route.path;
+      if (!currentPath.startsWith('/Status')) {
+        this.stopDateUpdater()
+        // console.log("noway")
+      }
+      // console.log("way")
+    },
+
     get_date() {
       axios.get(this.url)
         .then(response => response.data)
@@ -55,6 +80,7 @@ export default {
     update_date(data) {
       this.date = data;
       this.loading = false;
+      this.checkRouteAndExecute();
     }
   }
 }
